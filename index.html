@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde é o meu cep?</title>
+    <link rel="stylesheet" href="/assets/css/pages/index/index.css">
+    <script type="module" src="assets/js/cadastro.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="/assets/imgs/maps-location-11101.svg">
+            <div class="navbar-links">
+                <a href="#">Início</a>
+                <a href="#buscar-cep">Procure seu CEP</a>
+                <a href="#">Saiba Mais</a>
+                <a href="#">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="buscar-cep">
+            <form class="formulario">
+                <label for="campo-cep">Digite seu CEP </label>
+                <input type="text" id="cep" name="cep">
+                <button id="btn-buscar">Clicar aqui</button>
+            </form>
+        </section>
+
+        <div id="modal-resultado" class="modal-container esconde-modal">
+            <div class="modal-card">
+                <button id="btn-fechar" class="btn-fechar">&times;</button>
+                <h2>Endereço Encontrado</h2>
+                
+                <div class="info-grupo">
+                <p><strong>Rua:</strong> <span id="modal-logradouro"></span></p>
+                <p><strong>Bairro:</strong> <span id="modal-bairro"></span></p>
+                <p><strong>Cidade:</strong> <span id="modal-localidade"></span></p>
+                <p><strong>Estado:</strong> <span id="modal-uf"></span></p>
+                </div>
+            </div>
+        </div>
+
+            <section id="contato" class="secao-contato">
+            <div class="container-contato">
+                
+            
+                <div class="sobre-info">
+                <h2>Saiba Mais Sobre o Nosso Serviço</h2>
+                <p>Acompanhe as novidades e receba atualizações sobre localização e endereçamento diretamente no seu e-mail.</p>
+                
+                <button id="btn-saiba-mais" class="btn-cta">Inscreva-se na nossa Newsletter</button>
+                </div>
+
+                
+                <form id="form-contato" class="form-mensagem">
+                <h3>Envie uma Mensagem</h3>
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required placeholder="Seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required placeholder="seu@email.com">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+
+                <button type="submit" id="btn-enviar-contato">Enviar Mensagem</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+            <footer class="rodape">
+            <div class="container-rodape">
+                <p>&copy; 2026 @stephellia. Todos os direitos reservados.</p>
+                <p class="follow-text">Follow for more</p>
+            </div>
+        </footer>
+
+</body>
+</html>

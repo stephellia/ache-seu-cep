@@ -1,0 +1,152 @@
+.secao-contato {
+  background-color: #f8fafc;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-contato {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.sobre-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-info h2 {
+  color: #047857;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.sobre-info p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.btn-cta {
+  background-color: #047857;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-cta:hover {
+  background-color: #065f46;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.2);
+}
+
+.form-mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-mensagem h3 {
+  color: #1f2937;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.form-mensagem label {
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-mensagem input,
+.form-mensagem textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-mensagem input:focus,
+.form-mensagem textarea:focus {
+  border-color: #047857;
+  box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
+}
+
+.form-mensagem textarea {
+  resize: vertical;
+}
+
+#btn-enviar-contato {
+  background-color: #1f2937;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+#btn-enviar-contato:hover {
+  background-color: #111827;
+}
+
+.rodape {
+  background-color: #1f2937;
+  color: #9ca3af;
+  padding: 20px 0;
+  text-align: center;
+  font-family: inherit;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+.container-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.rodape p {
+  margin: 0;
+}
+
+.follow-text {
+  color: #047857;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .container-contato {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 32px;
+  }
+
+  .btn-cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+

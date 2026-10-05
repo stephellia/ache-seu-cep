@@ -1,0 +1,94 @@
+#buscar-cep {
+  background-image: url('../../../../imgs/mapa-main.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.formulario input{
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    width: 40rem;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+
+}
+
+.formulario label{
+    color: #2D3748;
+    font-weight: 600; 
+    font-size: 0.95rem; 
+    margin-bottom: 8px; 
+    display: block;
+    font-size: 1.3rem;
+}
+
+.esconde-modal {
+  display: none !important;
+}
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal-card {
+  background: #ffffff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+}
+
+
+.btn-fechar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+#btn-buscar {
+  background-color: #047857; 
+  color: #ffffff;
+  font-family: 'Google Sans', sans-serif, system-ui;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn-buscar:hover {
+  background-color: #065f46; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.15);
+}
